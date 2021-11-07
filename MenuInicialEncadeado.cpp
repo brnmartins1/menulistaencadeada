@@ -229,7 +229,8 @@ int funcaodesejada = 1;
     ponteiroen->nome = "";
     ponteiroen->rg = 0;
     ponteiroen->proximo = NULL;
-
+    
+    /*
    //Cria o primeiro valor
     pessoa *novoprivalor = new pessoa;
     novoprivalor->nome = "João";
@@ -247,6 +248,8 @@ int funcaodesejada = 1;
     novosegvalor->proximo = NULL;
 
     novoprivalor->proximo = novosegvalor;
+    */
+
 
 
 
