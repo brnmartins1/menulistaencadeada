@@ -37,7 +37,7 @@ while(p != NULL){
 void imprimir(pessoa *ponteiroen){
 if(retornatam(ponteiroen)== 0){
 
-    cout<<"Lista vàzia\n\n";
+    cout<<"Lista vÃ zia\n\n";
 }else{
     int i;
     pessoa *p = ponteiroen;
@@ -58,7 +58,7 @@ void adccomeco(pessoa *&ponteiroen, string nome, int rg){
     novoValor->rg = rg;
     novoValor->proximo = ponteiroen;
 
-//    Verifica se a lista está vazia
+//    Verifica se a lista estÃ¡ vazia
     if(ponteiroen->nome == ""){
         novoValor->proximo = NULL;
     }else{
@@ -101,7 +101,7 @@ void adcposicao(pessoa *&ponteiroen, string nome, int rg, int posicao){
     int cont = 0;
 
     while(cont <= posicao){
-//       Para de percorrer a lista auando chega na posição anterior à desejada
+//       Para de percorrer a lista auando chega na posiÃ§Ã£o anterior Ã  desejada
         if(cont == posicao - 1){
 
 //            Auxiliar
@@ -178,7 +178,7 @@ while(cont <= posicao){
 //       Auxiliar recebe o valor que sera descartado
         aux = p->proximo;
 
-//        Faz com que o próximo pule um elemento;
+//        Faz com que o prÃ³ximo pule um elemento;
         p->proximo = aux->proximo;
 
         free(aux);
@@ -187,7 +187,7 @@ while(cont <= posicao){
 
 
     }
-//        Realiza uma movimentação
+//        Realiza uma movimentaÃ§Ã£o
         p = p->proximo;
         cont++;
 
@@ -197,11 +197,11 @@ while(cont <= posicao){
 
 string buscarg(pessoa *&ponteiroen, int rg){
 
-//    Caso não exista nenhum nome ligado ao rg procurado
-    string nome ="Não encontrado";
+//    Caso nÃ£o exista nenhum nome ligado ao rg procurado
+    string nome ="NÃ£o encontrado";
 
     pessoa *p = ponteiroen;
-//    Percorre a lista à procura do nome ligado ao rg
+//    Percorre a lista Ã  procura do nome ligado ao rg
     while(p != NULL){
     if(p->rg == rg){
 
@@ -224,7 +224,7 @@ setlocale(LC_ALL,"");
 
 int funcaodesejada = 1;
 
-
+    //Valor vÃ zio
     pessoa *ponteiroen = new pessoa;
     ponteiroen->nome = "";
     ponteiroen->rg = 0;
@@ -232,7 +232,7 @@ int funcaodesejada = 1;
 
    //Cria o primeiro valor
     pessoa *novoprivalor = new pessoa;
-    novoprivalor->nome = "João";
+    novoprivalor->nome = "JoÃ£o";
     novoprivalor->rg = 123;
     novoprivalor->proximo = NULL;
 
@@ -242,7 +242,7 @@ int funcaodesejada = 1;
     //Cria o segundo valor.
 
     pessoa *novosegvalor = new pessoa;
-    novosegvalor->nome = "José";
+    novosegvalor->nome = "JosÃ©";
     novosegvalor->rg = 312;
     novosegvalor->proximo = NULL;
 
@@ -253,18 +253,18 @@ int funcaodesejada = 1;
     while(funcaodesejada < 9 && funcaodesejada > 0){
 
 
-        cout <<"\t\t\nOperações \n\n";
-        cout <<"1 - Inserção de um node no início da lista.\n";
-        cout <<"2 - Inserção de um node no fim da lista.\n";
-        cout <<"3 - Inserção de um node na posição desejada.\n";
-        cout <<"4 - Remoção do node no início da lista.\n";
-        cout <<"5 - Remoção do node no fim da lista.\n";
-        cout <<"6 - Remoção do node na posição desejada.\n";
+        cout <<"\t\t\nOperaÃ§Ãµes \n\n";
+        cout <<"1 - InserÃ§Ã£o de um node no inÃ­cio da lista.\n";
+        cout <<"2 - InserÃ§Ã£o de um node no fim da lista.\n";
+        cout <<"3 - InserÃ§Ã£o de um node na posiÃ§Ã£o desejada.\n";
+        cout <<"4 - RemoÃ§Ã£o do node no inÃ­cio da lista.\n";
+        cout <<"5 - RemoÃ§Ã£o do node no fim da lista.\n";
+        cout <<"6 - RemoÃ§Ã£o do node na posiÃ§Ã£o desejada.\n";
         cout <<"7 - Procurar um node pelo campo RG.\n";
         cout <<"8 - Imprimir a lista.\n";
         cout <<"9 - Sair do sistema.\n";
-        cout <<"\n\nTamanho átual: "<<retornatam(ponteiroen)<<"\n\n\n";
-        cout <<"Escolha uma opção e aperte ENTER.\n";
+        cout <<"\n\nTamanho Ã¡tual: "<<retornatam(ponteiroen)<<"\n\n\n";
+        cout <<"Escolha uma opÃ§Ã£o e aperte ENTER.\n";
         cin >> funcaodesejada;
 
 
@@ -278,7 +278,7 @@ int funcaodesejada = 1;
 
         switch(funcaodesejada){
         case 1:
-            cout <<"Função escolhida: 1 - Inserção de um node no início da lista.\n\n";
+            cout <<"FunÃ§Ã£o escolhida: 1 - InserÃ§Ã£o de um node no inÃ­cio da lista.\n\n";
             cout <<"Insira o nome:";
             cin >>nome;
             cout <<"Insira o rg:";
@@ -287,7 +287,7 @@ int funcaodesejada = 1;
 
             break;
         case 2:
-            cout <<"Função escolhida: 2 -   Inserção de um node no fim da lista.\n\n";
+            cout <<"FunÃ§Ã£o escolhida: 2 -   InserÃ§Ã£o de um node no fim da lista.\n\n";
             cout <<"Insira o nome:";
             cin >>nome;
             cout <<"Insira o rg:";
@@ -301,8 +301,8 @@ int funcaodesejada = 1;
             }
             break;
         case 3:
-            cout <<"Função escolhida: 3 -   Inserção de um node na posição desejada.\n\n";
-            cout<<"\nInsira a posição desejada:";
+            cout <<"FunÃ§Ã£o escolhida: 3 -   InserÃ§Ã£o de um node na posiÃ§Ã£o desejada.\n\n";
+            cout<<"\nInsira a posiÃ§Ã£o desejada:";
             cin>>posicao;
             cout <<"\nInsira o nome:";
             cin >>nome;
@@ -321,11 +321,11 @@ int funcaodesejada = 1;
                     }
             break;
         case 4:
-            cout <<"Função escolhida: 4 -   Remoção do node no início da lista.\n\n";
+            cout <<"FunÃ§Ã£o escolhida: 4 -   RemoÃ§Ã£o do node no inÃ­cio da lista.\n\n";
                     removeinicio(ponteiroen);
             break;
         case 5:
-            cout <<"Função escolhida: 5 -   Remoção do node no fim da lista.\n\n";
+            cout <<"FunÃ§Ã£o escolhida: 5 -   RemoÃ§Ã£o do node no fim da lista.\n\n";
                    if(retornatam(ponteiroen)== 1){
                     removeinicio(ponteiroen);
                    }else{
@@ -333,8 +333,8 @@ int funcaodesejada = 1;
                    }
             break;
         case 6:
-            cout <<"Função escolhida: 6 -   Remoção do node na posição desejada.\n\n";
-                    cout<<"Insira a posição do node que deseja remover:";
+            cout <<"FunÃ§Ã£o escolhida: 6 -   RemoÃ§Ã£o do node na posiÃ§Ã£o desejada.\n\n";
+                    cout<<"Insira a posiÃ§Ã£o do node que deseja remover:";
                     cin>>posicao;
                     if(posicao== 0){
                     removeinicio(ponteiroen);
@@ -345,14 +345,14 @@ int funcaodesejada = 1;
                     }
             break;
         case 7:
-            cout <<"Função escolhida: 7 -   Procurar um node pelo campo RG.\n\n";
+            cout <<"FunÃ§Ã£o escolhida: 7 -   Procurar um node pelo campo RG.\n\n";
                     cout <<"Insira o rg que deseja procurar:";
                     cin >>rg;
-                    cout<<"\n\nO nome do portador do rg é "<<buscarg(ponteiroen, rg)<<"\n\n";
+                    cout<<"\n\nO nome do portador do rg Ã© "<<buscarg(ponteiroen, rg)<<"\n\n";
             break;
 
         case 8:
-            cout <<"Função escolhida: 8 - Imprimir a lista.\n\n";
+            cout <<"FunÃ§Ã£o escolhida: 8 - Imprimir a lista.\n\n";
                 imprimir(ponteiroen);
 
             break;
