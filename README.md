@@ -21,19 +21,11 @@ Funções do menu
 //   Functions
  
  1 - Insert a node at the beginning of the list.
- 
- 2 - Insert a node at the end of the list.
- 
+ 2 - Insert a node at the end of the list. 
  3 - Insert a node in the chosen position.
- 
  4 - Remove a node at the beginning of the list.
- 
  5 - Remove a node at the end of the list.
- 
  6 - Remove a node in the chosen position.
- 
  7 - Search a node by RG.
- 
  8 - Show the list.
- 
  9 - Exit
