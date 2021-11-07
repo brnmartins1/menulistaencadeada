@@ -229,29 +229,6 @@ int funcaodesejada = 1;
     ponteiroen->nome = "";
     ponteiroen->rg = 0;
     ponteiroen->proximo = NULL;
-    
-    /*
-   //Cria o primeiro valor
-    pessoa *novoprivalor = new pessoa;
-    novoprivalor->nome = "João";
-    novoprivalor->rg = 123;
-    novoprivalor->proximo = NULL;
-
-    //Transforma o ponteiro do inicio da lista no novo valor
-    ponteiroen = novoprivalor;
-
-    //Cria o segundo valor.
-
-    pessoa *novosegvalor = new pessoa;
-    novosegvalor->nome = "José";
-    novosegvalor->rg = 312;
-    novosegvalor->proximo = NULL;
-
-    novoprivalor->proximo = novosegvalor;
-    */
-
-
-
 
     while(funcaodesejada < 9 && funcaodesejada > 0){
 
